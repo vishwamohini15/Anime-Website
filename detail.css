@@ -1,0 +1,19 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+.detail-page{
+     height: 50vh;
+     width: 100%;
+     background-color: lightskyblue;
+     display: flex;
+}
+
+.detail{
+     display: flex;
+     flex-direction: column;
+     margin-inline: 15px;
+     margin-block: 18px;
+}

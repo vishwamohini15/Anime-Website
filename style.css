@@ -1,0 +1,32 @@
+.cards{
+     display: flex;
+     background-color: rgb(136, 136, 142);
+     padding: 12px 15px;
+     gap: 10px;
+     min-width: 100vw;
+     flex-direction: column;
+     min-height: 90vh;
+
+
+}
+
+h3{
+     color: aliceblue;
+}
+
+.card{
+
+     display: flex;
+     gap: 15px;
+     /* flex-direction: column; */
+     height: 400px;
+     overflow: scroll;
+     padding: 15px;
+}
+
+.card-a{
+     background-color: #fff;
+     padding: 12px 10px;
+     
+}
+
