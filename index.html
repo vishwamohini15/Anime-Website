@@ -1,58 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Document</title>
      <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-     <!-- <h1>hello</h1> -->
      <div class="contai">
-<div class="banner-section">
-     <nav>
-          <h1>ANIME Collection</h1>
+          <div class="banner-section">
+               <nav>
+                    <h1>ANIME <span>Collection</span></h1>
 
-          <div class="right-nav">
-               <h3>Trending</h3>
-               <h3>UPcoming</h3>
-               <h3>Popular</h3>
-               <h3>Airing</h3>
+                    <div class="right-nav">
+                         <a href="#trending">
+                              <h3>Trending</h3>
+                         </a>
+                         <a href="#upcoming">
+                              <h3>UPcoming</h3>
+                         </a>
+                         <a href="#popular">
+                              <h3>Popular</h3>
+                         </a>
+                         <a href="#airing">
+                              <h3>Airing</h3>
+                         </a>
+                    </div>
+
+               </nav>
+
+               <div class="banner">
+
+                    <div class="banner_left">
+                         <h1>Naruto</h1>
+                         <h3>The Complete Series</h3>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                              pariatur numquam accusamus!</p>
+                    </div>
+
+                    <div class="banner_right">
+                         <iframe width="560" height="315"  
+                              src="https://www.youtube.com/embed/-G9BqkgZXRA?si=9iIrlTJ6wqCU0qzO?mute=1&autoplay=1"
+                              title="YouTube video player" frameborder="0" allowfullscreen ></iframe>
+                    </div>
+
+                    <div class="shadow"></div>
+
+               </div>
+
           </div>
-          
-     </nav>
-</div>
-
-    
 
 
-     <div class="cards">
-          <h1>Trending</h1>
-          <div class="card">
-               <!-- <img src='https://cdn.myanimelist.net/images/anime/10/18793.jpg' alt=""> -->
-               <!-- <h3> Monster </h3> -->
+
+
+          <div class="cards">
+               <h1 id="trending">Trending</h1>
+               <div class="card">
+               </div>
+
+               <h1 id="upcoming">upcoming</h1>
+               <div class="card-2 card"></div>
+
+               <h1 id="popular">popular</h1>
+               <div class="card-3 card"></div>
+
+
+               <h1 id="airing">AIRING</h1>
+               <div class="card-4 card"></div>
+
           </div>
 
-          <!-- <div class="card">
-               <img src='https://cdn.myanimelist.net/images/anime/10/18793.jpig' alt="">
-               <h3>Monster </h3>
-          </div> -->
-          <h1>upcoming</h1>
-
-          <div class="card-2 card"></div>
-          <h1>popular</h1>
-
-          <div class="card-3 card"></div>
-
-
-          <h1>AIRING</h1>
-
-          <div class="card-4 card"></div>
      </div>
-
-</div>
      <script src="script.js"></script>
 </body>
+
 </html>
 
 
@@ -75,7 +98,7 @@
 
 
 
-   <!-- <nav>
+<!-- <nav>
           <h1>ANIME <br> Collection</h1>
           <div class="section">
           <span>Trending</span>
