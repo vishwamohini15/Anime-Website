@@ -24,10 +24,10 @@ const learnApi = async () => {
 
         card.innerHTML += `
            <div class ="card-a">
-            <img  onclick="handlePop('${element.trailer.embed_url}', '${element.title}', '${element.mal_id}')" src=${element.images.jpg.image_url} alt="">
+            <img  onclick="handlePop('${element.trailer.embed_url}', '${element.mal_id}')" src=${element.images.jpg.image_url} alt="">
 
    
-          <h4>${element.title} </h4>
+          <h4>${element.title.split(" ").slice(0,2)} </h4>
       </div>
 
           `
@@ -37,11 +37,6 @@ const learnApi = async () => {
 
 
 learnApi()
-
-
-
-
-
 
 
 // let pop=
@@ -59,7 +54,7 @@ const getUpcoming = async () => {
 
         card2.innerHTML += `
     <div class ="card-a">
-    <img  onclick="handlePop('${mohini.trailer.embed_url}')" src=${mohini.images.jpg.image_url} alt="">
+    <img  onclick="handlePop('${mohini.trailer.embed_url}','${mohini.mal_id}')" src=${mohini.images.jpg.image_url} alt="">
     <h4>${mohini.title} </h4>
 </div>
     `
@@ -78,7 +73,7 @@ const getPopular = async () => {
     let hii = await popular.json()
     // console.log(hii);
 
-    hii.data.forEach((arya) => {
+    hii.data.forEach(arya => {
         // console.log(arya);
 
         let card3 = document.querySelector(".card-3")
@@ -86,7 +81,7 @@ const getPopular = async () => {
 
         card3.innerHTML += `
     <div class ="card-a">
-    <img  onclick="handlePop('${arya.trailer.embed_url}')" src=${arya.images.jpg.image_url} alt="">
+    <img  onclick="handlePop('${arya.trailer.embed_url}','${arya.mal_id}')" src=${arya.images.jpg.image_url} alt="">
     <h4>${arya.title} </h4>
 </div>
     `
@@ -95,13 +90,10 @@ const getPopular = async () => {
 
 }
 
-
 setTimeout(() => {
 getPopular()
     
 }, 1000);
-
-
 
 
 const random = async () => {
@@ -111,14 +103,14 @@ const random = async () => {
     console.log(hello00);
 
     hello00.data.forEach((mohini) => {
-        console.log(mohini);
+        // console.log(mohini);
 
         let card4 = document.querySelector(".card-4")
 
 
         card4.innerHTML += `
     <div class ="card-a">
-    <img  onclick="handlePop('${mohini.trailer.embed_url}', '${mohini.title}, ${mohini.mal_id})" src=${mohini.images.jpg.image_url} alt="">
+    <img  onclick="handlePop('${mohini.trailer.embed_url}', '${mohini.mal_id}')" src=${mohini.images.jpg.image_url} alt="">
     <h4>${mohini.title} </h4>
 </div>
     `
@@ -130,12 +122,12 @@ const random = async () => {
 setTimeout(() => {
 random()
     
-}, 1000);
+}, 2000);
 
 
-function handlePop(url,title,id){
+function handlePop(url,id){
     console.log(url);
-    console.log(title);
+    // console.log(title);
     console.log(id);
 
 

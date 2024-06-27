@@ -1,12 +1,40 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+
+}
+body{
+     background-color:rgb(3, 18, 32);
+
+}
+nav{
+     height:100px ;
+}
+
+.card{
+     margin-inline: 50px;
+     overflow-y: hidden;
+}
+.card img:hover {
+     background-color: blue;
+}
+
+
 .cards{
      display: flex;
-     background-color: rgb(136, 136, 142);
+     background-color:rgb(3, 18, 32);
      padding: 12px 15px;
      gap: 10px;
      min-width: 100vw;
      flex-direction: column;
      min-height: 90vh;
 
+
+}
+.cards h1{
+     margin:0  65px;
+     color: rgb(228, 220, 105);
 
 }
 
@@ -17,16 +45,141 @@ h3{
 .card{
 
      display: flex;
-     gap: 15px;
+     gap: 10px;
      /* flex-direction: column; */
-     height: 400px;
-     overflow: scroll;
-     padding: 15px;
+     height: 450px;
+     /* overflow: scroll; */
+     padding: 20px 18px;
 }
 
 .card-a{
-     background-color: #fff;
+     /* background-color: #6c0202; */
+     color: white;
      padding: 12px 10px;
+     transition: transform 0.2s;
+     border-radius: 18px;
      
 }
+.card-a img{
+     border-radius: 20px;
+     height: 320px;
+     width: 220px;
+     margin-bottom: 10px;
+}
+.card-a:hover{
+     transform: scale(1.2);
+     /* background-color:#aa0404; */
+}
 
+.card h4{
+     font-size: 18px;
+}
+
+/* width */
+/* ::-webkit-scrollbar {
+     width: 0px;
+   } */
+   
+   /* Track */
+   /* ::-webkit-scrollbar-track {
+     box-shadow: inset 0 0 5px rgb(69, 64, 64);
+     border-radius: 10px;
+   } */
+   
+   /* Handle */
+   /* ::-webkit-scrollbar-thumb {
+     background: rgb(16, 36, 126);
+     border-radius: 10px;
+   } */
+
+
+   
+   ::-webkit-scrollbar {
+     height: 15px;
+     
+   }
+   
+   .card::-webkit-scrollbar-thumb {
+     background: linear-gradient(to left, #aa0404, lightslategray);
+     border-radius: 20px;
+   }
+
+
+
+
+
+
+
+
+
+/*
+   nav{
+     height: 100px;
+     width: 100vw;
+     background-color: #fff;
+     display: flex;
+     justify-content: space-between;
+}
+
+.contai{
+     width: 100vw;
+     min-height: 100vh;
+     overflow-y: hidden;
+}
+
+.banner{
+     width: 100vw;
+     height: 75vh;
+     background-color:rgb(3, 18, 32);
+
+     position: relative;
+}
+.pic1{
+     height: 400px;
+     position: absolute;
+     bottom: 80px;
+     left: 8%;
+}
+.pic2{
+     height: 400px;
+     position: absolute;
+     top: 80px;
+     right: 8%;
+}
+
+.text{
+     position: absolute;
+     top: 6%;
+     left: 30%;
+     /* border: 2px solid black; */
+     /* width: 500px; */
+     /* background-color: lightskyblue; */
+/* }
+.text h2{
+     font-size: 68px;
+     color: darkslategrey;
+}
+.text h1{
+     font-size: 90px;
+     text-align: center;
+     color: rgb(228, 220, 105);
+}
+
+.text h3{
+     font-size: 25px;
+     text-align: end;
+     color: darkgreen;
+}
+.border-deg{
+     border: 4px solid red;
+     position: absolute;
+     top: 10%;
+     left: 5%;
+     width: 90vw;
+     /* background-color: blue; */
+     /* background: linear-gradient(lightskyblue, gray); */
+     /* height: 85%; */
+     /* border-top-left-radius: 290px; */
+     /* border-bottom-left-radius: 180px;
+     border-top-right-radius: 300px; */
+ 
