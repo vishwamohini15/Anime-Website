@@ -3,7 +3,6 @@ let showimg=document.querySelector(".detail-page")
 let showVid=document.querySelector(".video-box")
 let memberEL=document.querySelector(".member")
 
-
 let id=localStorage.getItem("animeId")
 console.log(id);
 
@@ -34,21 +33,14 @@ showVid.innerHTML=`
      <iframe src='${respose.data.trailer.embed_url}' frameborder="0"></iframe>
 
 `
-
-
-
 }
 
-
 getDetailed()
-
-
 
 const getCharacter=async()=>{
      let charct=await fetch(`https://api.jikan.moe/v4/anime/${id}/characters`)
      let getCharc=await charct.json()
      console.log(getCharc.data);
-
 
      getCharc.data.forEach(element => {
           console.log(element);
@@ -61,11 +53,7 @@ const getCharacter=async()=>{
 
      });
 
-
-    
-     
 }
-
 getCharacter()
 
 

@@ -15,7 +15,7 @@ nav {
      top: 0;
      left: 0;
      width: 100%;
-     background-color: rgba(0, 0, 0, 0.374);
+     /* background-color: rgba(0, 0, 0, 0.425); */
      height: 70px;
      display: flex;
      justify-content: space-between;
@@ -44,10 +44,41 @@ nav div {
      margin-right: 100px;
 }
 
+.serchbox{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 12px;
+     width: 70%;
+     background-color: blue;
+     border-radius: 12px;
+     overflow: hidden;
+     margin-top: 28px;
+}
+
+.serchbox input{
+     font-size: 19px;
+     width: 100%;
+     padding:10px 20px;
+     border: none;
+
+}
+::placeholder{
+     color: rgb(71, 71, 172);
+}
+
+.serchbox  img{
+     width: 28px;
+
+     margin-right: 10px;
+     background-color: blue;
+}
+
+
 .banner {
      width: 100%;
      height: 90vh;
-     background-image: url("WhatsApp\ Image\ 2024-06-27\ at\ 2.53.09\ PM.jpeg");
+     /* background-image: url("WhatsApp\ Image\ 2024-06-27\ at\ 2.53.09\ PM.jpeg"); */
      background-repeat: no-repeat;
      background-position: center;
      background-size: cover;
@@ -67,6 +98,9 @@ nav div {
      top: 0;
      left: 0;
      z-index: 2;
+}
+.banner_left{
+     width: 50%;
 }
 
 .banner_left,.banner_right{
@@ -102,7 +136,7 @@ nav div {
      width: 60%;
 }
 
-.banner iframe {
+.banner video {
      border: 2px solid white;
      box-shadow: 0 0 10px 5px white;
      border-radius: 20px;

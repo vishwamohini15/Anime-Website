@@ -1,4 +1,4 @@
-*{
+* {
      margin: 0;
      padding: 0;
      box-sizing: border-box;
@@ -6,46 +6,66 @@
 }
 
 
-.detail-page{
+.detail-page {
      /* height: 70vh; */
      width: 100%;
      /* background-color: lightskyblue; */
-    
+
      display: flex;
 
 }
 
-.img-box img{
+.img-box img {
      height: 70vh;
-     margin:33px 39px;
+     margin: 33px 39px;
      border-radius: 20px;
-     box-shadow: 3px 4px 4px rgb(251, 255, 0);
+     box-shadow: 0px 0px 4px 6px rgb(179, 178, 178);
      background-color: #bd1818;
 }
 
 .background {
      height: 85vh;
      width: 100vw;
-     background-image:url(backgroung3.png);
+     background-image: url(backgroung3.png);
      background-position: center;
      background-size: cover;
-     opacity: 0.86;
      /* color: rgb(0, 47, 255); */
-     color:rgb(239, 183, 80);
+     color: rgb(252, 251, 250);
      /* filter: blur(20px); */
+     position: relative;
+}
+
+.shadow {
+     width: 100%;
+     height: 100%;
+     background: linear-gradient(rgba(0, 0, 0, 0.452) 70%,rgb(3, 18, 32));
+     position: absolute;
+     top: 0;
+     left: 0;
+     z-index: 2;
 }
 
 
 
-.detail{
+.detail {
      display: flex;
      flex-direction: column;
      justify-content: center;
      font-size: 33px;
 }
 
+.detail h1{
+     color: white;
+     font-family: sans-serif;
+}
 
-.member{
+.detail-page{
+     position: relative;
+     z-index: 5;
+}
+
+
+.member {
      width: 100vw;
      display: flex;
      flex-wrap: wrap;
@@ -53,44 +73,47 @@
      /* align-items: center; */
      background-color: rgb(3, 18, 32);
      justify-content: center;
-     
+
 }
-.character{
+
+.character {
      color: yellow;
 }
 
 
-.character-pic{
-     background-color: #bd1818;
+.character-pic {
+     background-color: rgba(0, 0, 255, 0.418);
      border-radius: 15px;
      color: white;
      text-align: center;
 }
-.character-pic img{
+
+.character-pic img {
      height: 250px;
      border-radius: 10px;
      background-color: #bd1818;
 }
-.character{
+
+.character {
      background-color: rgb(3, 18, 32);
      padding: 30px;
 }
 
-.video-box{
+.video-box {
      background-color: rgb(3, 18, 32);
      height: 60vh;
      display: flex;
      flex-direction: column;
      align-items: center;
-padding: 30px;
+     padding: 30px;
 
 }
 
-.video-box iframe{
+.video-box iframe {
      width: 600px;
      height: 400px;
      margin-top: 40px;
      border-radius: 25px;
-     background-color: white;
+     background-color: rgb(28, 9, 232);
      padding: 20px;
 }
