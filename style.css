@@ -240,6 +240,57 @@ h3 {
 
 
 
+@media screen and (max-width: 480px) {
+     nav .right-nav a{
+          display: none;
+     }
+
+     .banner{
+          display: flex;
+          flex-direction: column;
+          gap: 63px;
+          align-items: center;
+          justify-content: center;
+          /* margin-top: 100px; */
+          padding: 100px 18px;
+
+     }
+     .banner_left{
+          height: 50%;
+          width: 100%;
+     }
+     .serchbox{
+          width: 90%;
+     }
+
+     .banner_right{
+          width: 100%;
+          padding: 15px 0px;
+     }
+     .banner_right video{
+          width: 90%;
+          align-self: center;
+     }
+
+     .cards h1{
+          font-size: 25px;
+          margin: 0px;
+          text-transform: capitalize;
+     }
+     .card{
+          margin: 0;
+          padding: 0;
+          height: fit-content;
+     }
+
+     .card-a img{
+          width:110px ;
+          height: 150px;
+     }
+
+
+   }
+
 
 
 

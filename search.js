@@ -20,7 +20,7 @@ const findSearchAnime=async()=>{
 cards.innerHTML +=`
  <div class ="card-a">
     <img  onclick ="searchpop('${element.trailer.embed_url}', '${element.mal_id}')" src=${element.images.jpg.image_url} alt="">
-    <h4>${element.title.split(" ").slice(0,3).join(" ")} </h4>
+    <h4>${element.title.split(" ").slice(0,2).join(" ")} </h4>
 </div>
 
 `

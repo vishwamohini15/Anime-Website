@@ -117,3 +117,58 @@
      background-color: rgb(28, 9, 232);
      padding: 20px;
 }
+
+
+
+@media only screen and (max-width: 700px) {
+
+     .background {
+          height: fit-content;
+     }
+
+     .img-box img{
+          height: 50vh;
+     }
+
+     .detail-page {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+     }
+
+     .detail {
+          gap: 10px;
+     }
+
+     .detail h1 {
+          font-size: 30px;
+     }
+
+     .detail h3,
+     h4 {
+          font-size: 20px;
+     }
+
+     .video-box{
+          height: fit-content;
+     }
+
+     .video-box iframe {
+          width: 95%;
+          aspect-ratio: 4/3;
+          background-color: transparent;
+     }
+
+     .character{
+          font-size: 20px;
+          padding: 10px 15px;
+     }
+
+     .character-pic img {
+          height: 163px;
+     }
+
+}
+
+
